@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "RideCareLegacy",
+    "slug": "RideCareLegacy",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "แอปพลิเคชันต้องการเข้าถึงตำแหน่งของคุณเพื่อตรวจจับความเร็วและการนำทางในขณะขับขี่",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "แอปพลิเคชันต้องการเข้าถึงตำแหน่งของคุณตลอดเวลาเพื่อส่งเสียงแจ้งเตือนความปลอดภัยและความเร็วในเบื้องหลัง",
+        "UIBackgroundModes": [
+          "location",
+          "audio",
+          "fetch"
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#D1E7DD"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.RideCareLegacy",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_LOCATION",
+        "VIBRATE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "updates": {
+      "enabled": false
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "แอปพลิเคชันต้องการเข้าถึงตำแหน่งของคุณตลอดเวลาเพื่อส่งเสียงแจ้งเตือนความปลอดภัยและความเร็วในเบื้องหลัง",
+          "isAndroidBackgroundLocationEnabled": true,
+          "isAndroidForegroundServiceEnabled": true
+        }
+      ]
+    ]
+  }
+}
